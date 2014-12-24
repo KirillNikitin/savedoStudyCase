@@ -1,0 +1,35 @@
+<div ng-controller="transferController">
+    <form role="form" ng-submit="submitTransfer()" ng-show="inwork">
+        <div class="form-group">
+            <label for="moneyResieverName">Name of payee</label>
+            <select class="selectpicker form-control" id="moneyResieverName" ng-model="myPayee" ng-options="payee.name for payee in payees" ng-change="change();">
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="bankName">Name of bank</label>
+            <input type="text" class="form-control" id="bankName" disabled="disabled" placeholder="Enter name of bank" ng-model="transferBankName">
+        </div>
+        <div class="form-group">
+            <label for="moneyResieverCardNumber">Card number</label>
+            <input type="text" class="form-control" id="moneyResieverCardNumber" disabled="disabled" placeholder="XXXX XXXX XXXX XXXX" ng-model="transferCardNumber">
+        </div>
+        <div class="form-group">
+            <label for="sumToTransfer">Sum to transfer</label>
+            <input type="text" class="form-control" id="sumToTransfer" placeholder="" ng-model="transferSum">
+        </div>
+
+        <input type="submit" class="btn btn-default" value="Transfer"/>
+    </form>
+    <div class="row" ng-hide="inwork">
+        <div class="col-md-12 text-center">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <h5><span class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>You transfer is successfully completed!</span></h5>
+            <a href="balance" class="btn btn-default">View balance</a>
+            <a href="transactions/new" class="btn btn-default" ng-click="inwork = true;">New transaction</a>
+        </div>
+    </div>
+</div>

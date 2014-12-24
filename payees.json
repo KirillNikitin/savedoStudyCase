@@ -1,0 +1,16 @@
+[{
+  "payeeId": 1,
+  "name": "John Smith",
+  "nameOfBank": "Deutsche Bank",
+  "cardNumber": 1234567891012131
+}, {
+  "payeeId": 2,
+  "name": "John Wattson",
+  "nameOfBank": "Deutsche Bank",
+  "cardNumber": 1234567891012132
+  }, {
+  "payeeId": 3,
+  "name": "Yann Right",
+  "nameOfBank": "HSBC",
+  "cardNumber": 1234567891012582
+  }]

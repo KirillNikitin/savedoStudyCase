@@ -1,0 +1,16 @@
+<form role="form" ng-submit="submitPayee()" ng-controller="PayeeController">
+    <div class="form-group">
+        <label for="payeeName" ng-bind="nameAddEdit"></label>
+        <input type="text" class="form-control" id="payeeName" placeholder="Enter name" ng-model="newPayeeName">
+    </div>
+    <div class="form-group">
+        <label for="bankName" ng-bind="bankAddEdit"></label>
+        <input type="text" class="form-control" id="bankName" placeholder="Enter name of bank" ng-model="newNameOfBank">
+    </div>
+    <div class="form-group">
+        <label for="cardNumber" ng-bind="ibanAddEdit"></label>
+        <input type="text" class="form-control" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" ng-model="newIBAN">
+    </div>
+
+    <input type="submit" class="btn btn-default" ng-value="value" ng-href="payees" />
+</form>
