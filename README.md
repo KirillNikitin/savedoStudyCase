@@ -5,8 +5,8 @@ The application is a single-page application which lets to user:
 - make transactions as money transfers to existed payees,
 - view the list of completed transactions and the rest of money on the amount.
 
-I have created a json of three users, who already are in the list (just for example). json is loading on the first application opening. 
-The user is able to edit any of them as well as any of new created payees. In «Make a payment» user can just select anybody of existed users and write down the sum which is needed to be transferred. All other data as a name of Bank and CreditCard number is loading automatically according to selected user details. I have not created any possibility to select date, because it is unclear how a user should be able to manage date. Should it be possibillity to select date in past (one week ago f.e.) or some date in the future. I can add such option as a date selection to the application if you could explain me what you’d exactly like to see.
+I have created a json of three payees, who already are in the list (just for example). json is loading on the first application opening. 
+The user is able to edit any of them as well as any of new created payees. In «Make a payment» user can just select anybody of existed payees and write down the sum which is needed to be transferred. All other data as a name of Bank and CreditCard number is loading automatically according to selected user details. I have not created any possibility to select date, because it is unclear how a user should be able to manage date. Should it be possibillity to select date in past (one week ago f.e.) or some date in the future. I can add such option as a date selection to the application if you could explain me what you’d exactly like to see.
 On click transfer button the transaction is proceeding to the transaction list and localstorage. Transaction list is possible to view at section ‘balance’.
 
 Resume:
