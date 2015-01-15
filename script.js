@@ -118,16 +118,15 @@
 
             $scope.submitPayee = function(){
                 if ($location.path() == '/payee/new') {
-                    alert('fdp-test');
-                    // var payee = {
-                    //     payeeId: $scope.newPayeeId,
-                    //     name: $scope.newPayeeName,
-                    //     nameOfBank: $scope.newNameOfBank,
-                    //     cardNumber: $scope.newIBAN
-                    // };
-                    // $rootScope.payees.push(payee);
+                    var payee = {
+                        payeeId: $scope.newPayeeId,
+                        name: $scope.newPayeeName,
+                        nameOfBank: $scope.newNameOfBank,
+                        cardNumber: $scope.newIBAN
+                    };
+                    $rootScope.payees.push(payee);
                     //localStorage.setItem('payees', $rootScope.payees);
-                    //$location.path('/payees');
+                    $location.path('/payees');
                 } else {
                     for(var i=0; i<($scope.payees).length; i++)
                         if($scope.payees[i].payeeId == $routeParams.id) {
