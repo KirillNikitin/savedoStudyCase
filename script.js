@@ -74,10 +74,6 @@
                     templateUrl: 'payee.html',
                     controller: 'PayeeController'
                 })
-                .when('/Book/:bookId/ch/:chapterId', {
-                    templateUrl: 'chapter.html',
-                    controller: 'ChapterController'
-                })
                 .when('/transactions/new', {
                     templateUrl: 'new_transaction.html',
                     controller: 'PaymentController'
@@ -122,15 +118,16 @@
 
             $scope.submitPayee = function(){
                 if ($location.path() == '/payee/new') {
-                    var payee = {
-                        payeeId: $scope.newPayeeId,
-                        name: $scope.newPayeeName,
-                        nameOfBank: $scope.newNameOfBank,
-                        cardNumber: $scope.newIBAN
-                    };
-                    $rootScope.payees.push(payee);
+                    alert('fdp-test');
+                    // var payee = {
+                    //     payeeId: $scope.newPayeeId,
+                    //     name: $scope.newPayeeName,
+                    //     nameOfBank: $scope.newNameOfBank,
+                    //     cardNumber: $scope.newIBAN
+                    // };
+                    // $rootScope.payees.push(payee);
                     //localStorage.setItem('payees', $rootScope.payees);
-                    $location.path('/payees');
+                    //$location.path('/payees');
                 } else {
                     for(var i=0; i<($scope.payees).length; i++)
                         if($scope.payees[i].payeeId == $routeParams.id) {
